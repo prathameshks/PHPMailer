@@ -1,9 +1,0 @@
-Options -Indexes
-<FilesMatch "\.(php|inc)$">
-    Order deny,allow
-    Deny from all
-</FilesMatch>
-
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
